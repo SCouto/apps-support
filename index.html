@@ -1,28 +1,58 @@
 <!doctype html>
-<html lang="gl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Soporte / Support</title>
-<style>body{font:17px/1.6 -apple-system,system-ui,sans-serif;max-width:680px;margin:2rem auto;padding:0 1rem;color:#222}a{color:#0a58ca}h1{font-size:1.6rem}h2{margin-top:2rem}nav a{margin-right:1rem}hr{margin:3rem 0;border:0;border-top:1px solid #8884}@media(prefers-color-scheme:dark){body{background:#111;color:#ddd}a{color:#6ea8fe}}</style></head><body>
-<nav><a href="index.html">Soporte / Support</a><a href="privacy.html">Privacidade / Privacy</a></nav>
-
-<section lang="gl">
-<h1>Soporte</h1>
-<p>Apps de Sergio Couto: <strong>Palabras Galegas</strong>, <strong>Vocabulario Ruso</strong> e <strong>Red Quiz</strong>.</p>
-<h2>Contacto</h2>
-<p>Para dúbidas, erros ou suxestións, escribe a <a href="mailto:serxiocouto@gmail.com">serxiocouto@gmail.com</a>. Indica a app, a versión e o modelo de dispositivo se é un problema técnico.</p>
-<h2>Preguntas frecuentes</h2>
-<p><strong>Preciso de conexión a internet?</strong> Non. As apps funcionan sen conexión.</p>
-<p><strong>Como recupero o meu progreso nun dispositivo novo?</strong> O progreso gárdase só no dispositivo e non hai contas, así que non se transfire automaticamente.</p>
-<p><strong>Como engado o widget?</strong> Mantén premido o fondo da pantalla de inicio, toca «+» e busca a app.</p>
-</section>
-<hr>
-<section lang="en">
-<h1>Support</h1>
-<p>Apps by Sergio Couto: <strong>Palabras Galegas</strong>, <strong>Vocabulario Ruso</strong> and <strong>Red Quiz</strong>.</p>
-<h2>Contact</h2>
-<p>For questions, bugs or suggestions, email <a href="mailto:serxiocouto@gmail.com">serxiocouto@gmail.com</a>. Please include the app, its version and your device model if it is a technical issue.</p>
-<h2>FAQ</h2>
-<p><strong>Do I need an internet connection?</strong> No. The apps work offline.</p>
-<p><strong>How do I recover my progress on a new device?</strong> Progress is stored only on the device and there are no accounts, so it is not transferred automatically.</p>
-<p><strong>How do I add the widget?</strong> Touch and hold the Home Screen background, tap "+" and search for the app.</p>
-</section>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Support · Sergio Couto</title>
+<meta name="description" content="Support for Palabras Galegas, Vocabulario Ruso and Red Quiz.">
+<meta name="theme-color" content="#2f6bff">
+<script>(function(){var t=null;try{t=localStorage.getItem("theme");}catch(e){}if(t==="dark"||t==="light"){document.documentElement.dataset.theme=t;}})();</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap">
+<link rel="stylesheet" href="style.css">
+<script src="app.js" defer></script>
+</head><body>
+<header class="site-header"><div class="header-inner">
+<a class="wordmark" href="index.html">Sergio <span>Couto</span></a>
+<nav>
+<a href="index.html" aria-current="page" data-i18n="navSupport">Support</a>
+<a href="privacy.html" data-i18n="navPrivacy">Privacy</a>
+</nav>
+<div class="controls">
+<div class="lang" role="group" data-i18n-aria="langLabel" aria-label="Language">
+<button type="button" data-lang="en" aria-pressed="false" aria-label="English"><img src="images/uk.png" alt="English" width="26" height="18"></button>
+<button type="button" data-lang="gl" aria-pressed="false" aria-label="Galego"><img src="images/gz.png" alt="Galego" width="26" height="18"></button>
+</div>
+<button type="button" class="theme" data-i18n-aria="themeLabel" aria-label="Switch between light and dark theme">
+<svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+<svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+</button></div></div></header>
+<main>
+<span class="eyebrow" data-i18n="sEyebrow">Support</span>
+<h1 data-i18n="sTitle">How can we help?</h1>
+<p class="lead" data-i18n="sLead">Android apps made with care. Questions, bugs or ideas are always welcome.</p>
+<div class="apps">
+<article class="app"><div class="app-head"><img src="images/galician.png" alt="" width="56" height="56"><h3>Palabras Galegas</h3></div>
+<p data-i18n="dGal">Learn Galician vocabulary with flashcards, home-screen widgets, daily reminders and pronunciation.</p>
+<div class="stores"><a class="btn btn--primary" href="https://play.google.com/store/apps/details?id=com.cards.galician" target="_blank" rel="noopener noreferrer">Google Play</a><span class="btn btn--soon" aria-disabled="true">App Store · <span data-i18n="soon">Coming soon</span></span></div></article>
+<article class="app"><div class="app-head"><img src="images/russian.png" alt="" width="56" height="56"><h3>Vocabulario Ruso</h3></div>
+<p data-i18n="dRus">Russian vocabulary flashcards with real pronunciation, conjugation tables and home-screen widgets.</p>
+<div class="stores"><span class="btn btn--soon" aria-disabled="true">Google Play · <span data-i18n="soon">Coming soon</span></span><span class="btn btn--soon" aria-disabled="true">App Store · <span data-i18n="soon">Coming soon</span></span></div></article>
+<article class="app"><div class="app-head"><img src="images/redquiz.png" alt="" width="56" height="56"><h3>Red Quiz</h3></div>
+<p data-i18n="dRed">A political geography quiz: flags, people and historical events, with online challenges against other players.</p>
+<div class="stores"><a class="btn btn--primary" href="https://play.google.com/store/apps/details?id=com.redquiz" target="_blank" rel="noopener noreferrer">Google Play</a><span class="btn btn--soon" aria-disabled="true">App Store · <span data-i18n="soon">Coming soon</span></span></div></article>
+<article class="app"><div class="app-head"><img src="images/multiplica.png" alt="" width="56" height="56"><h3>MultiplicApp</h3></div>
+<p data-i18n="dMul">Practise multiplication tables. Built for kids, with progress tracking and short timed drills.</p>
+<div class="stores"><a class="btn btn--primary" href="https://play.google.com/store/apps/details?id=com.aprende.multiplica" target="_blank" rel="noopener noreferrer">Google Play</a></div></article>
+<article class="app"><div class="app-head"><img src="images/forxarpg.png" alt="" width="56" height="56"><h3>Forxa de Lendas</h3></div>
+<p data-i18n="dFor">A step-by-step character creator for classic fantasy roleplaying games — races, classes, stats and equipment.</p>
+<div class="stores"><a class="btn btn--primary" href="https://play.google.com/store/apps/details?id=com.forja.rpg" target="_blank" rel="noopener noreferrer">Google Play</a></div></article>
+</div>
+<h2 data-i18n="sContactTitle">Contact</h2>
+<div class="card"><p data-i18n="sContactText">For questions, bugs or suggestions, send an email. If it is a technical issue, please include the app, its version and your device model.</p>
+<p class="mail">serxiocouto@gmail.com</p>
+<div class="stores"><a class="btn btn--primary" href="mailto:serxiocouto@gmail.com" data-i18n="sContactBtn">Email me</a><a class="btn btn--ghost" href="https://www.linkedin.com/in/sergiocoutocatoira" target="_blank" rel="noopener noreferrer">LinkedIn</a></div></div>
+<h2 data-i18n="sFaqTitle">FAQ</h2>
+<div class="card"><h3 data-i18n="q1">Do I need an internet connection?</h3><p data-i18n="a1">No. The apps work offline.</p></div>
+<div class="card"><h3 data-i18n="q2">How do I recover my progress on a new device?</h3><p data-i18n="a2">Progress is stored only on the device and there are no accounts, so it is not transferred automatically.</p></div>
+<div class="card"><h3 data-i18n="q3">How do I add the widget?</h3><p data-i18n="a3">Touch and hold the Home Screen background, tap "+" and search for the app.</p></div>
+</main>
+<footer data-i18n="footer">© Sergio Couto</footer>
 </body></html>

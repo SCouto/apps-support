@@ -1,26 +1,53 @@
 <!doctype html>
-<html lang="gl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Política de privacidade / Privacy Policy</title>
-<style>body{font:17px/1.6 -apple-system,system-ui,sans-serif;max-width:680px;margin:2rem auto;padding:0 1rem;color:#222}a{color:#0a58ca}h1{font-size:1.6rem}h2{margin-top:2rem}nav a{margin-right:1rem}hr{margin:3rem 0;border:0;border-top:1px solid #8884}@media(prefers-color-scheme:dark){body{background:#111;color:#ddd}a{color:#6ea8fe}}</style></head><body>
-<nav><a href="index.html">Soporte / Support</a><a href="privacy.html">Privacidade / Privacy</a></nav>
-
-<section lang="gl">
-<h1>Política de privacidade</h1>
-<p><em>Palabras Galegas, Vocabulario Ruso e Red Quiz. Última actualización: 5 de outubro de 2026.</em></p>
-<p>Estas aplicacións <strong>non recollen, almacenan nin comparten ningún dato persoal</strong>. Non requiren rexistro nin conexión a internet.</p>
-<p>O progreso, os favoritos e os axustes gárdanse unicamente no dispositivo e bórranse ao desinstalar a aplicación. As notificacións son locais e xéranse no propio dispositivo.</p>
-<p>As aplicacións non conteñen publicidade nin ferramentas de análise ou seguimento de terceiros.</p>
-<h2>Contacto</h2>
-<p>Sergio Couto — <a href="mailto:serxiocouto@gmail.com">serxiocouto@gmail.com</a></p>
-</section>
-<hr>
-<section lang="en">
-<h1>Privacy Policy</h1>
-<p><em>Palabras Galegas, Vocabulario Ruso and Red Quiz. Last updated: October 5, 2026.</em></p>
-<p>These apps <strong>do not collect, store or share any personal data</strong>. They require no sign-up and no internet connection.</p>
-<p>Progress, favorites and settings are stored only on your device and are deleted when you uninstall the app. Notifications are local and generated on the device itself.</p>
-<p>The apps contain no advertising and no third-party analytics or tracking tools.</p>
-<h2>Contact</h2>
-<p>Sergio Couto — <a href="mailto:serxiocouto@gmail.com">serxiocouto@gmail.com</a></p>
-</section>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privacy Policy · Sergio Couto</title>
+<meta name="description" content="Privacy policy for Palabras Galegas, Vocabulario Ruso and Red Quiz.">
+<meta name="theme-color" content="#2f6bff">
+<script>(function(){var t=null;try{t=localStorage.getItem("theme");}catch(e){}if(t==="dark"||t==="light"){document.documentElement.dataset.theme=t;}})();</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap">
+<link rel="stylesheet" href="style.css">
+<script src="app.js" defer></script>
+</head><body>
+<header class="site-header"><div class="header-inner">
+<a class="wordmark" href="index.html">Sergio <span>Couto</span></a>
+<nav>
+<a href="index.html" data-i18n="navSupport">Support</a>
+<a href="privacy.html" aria-current="page" data-i18n="navPrivacy">Privacy</a>
+</nav>
+<div class="controls">
+<div class="lang" role="group" data-i18n-aria="langLabel" aria-label="Language">
+<button type="button" data-lang="en" aria-pressed="false" aria-label="English"><img src="images/uk.png" alt="English" width="26" height="18"></button>
+<button type="button" data-lang="gl" aria-pressed="false" aria-label="Galego"><img src="images/gz.png" alt="Galego" width="26" height="18"></button>
+</div>
+<button type="button" class="theme" data-i18n-aria="themeLabel" aria-label="Switch between light and dark theme">
+<svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+<svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+</button></div></div></header>
+<main>
+<span class="eyebrow" data-i18n="pEyebrow">Privacy</span>
+<h1 data-i18n="pTitle">Privacy Policy</h1>
+<p class="updated">Palabras Galegas, Vocabulario Ruso, Red Quiz, MultiplicApp, Forxa de Lendas · <span data-i18n="pUpdated">Last updated: October 5, 2026.</span></p>
+<div class="card prose">
+<p data-i18n="pP1">These apps do not collect, store or share any personal data. They require no sign-up and no internet connection.</p>
+<p data-i18n="pP2">Progress, favorites and settings are stored only on your device and are deleted when you uninstall the app. Notifications are local and generated on the device itself.</p>
+<p data-i18n="pP3">The apps contain no advertising and no third-party analytics or tracking tools.</p>
+</div>
+<h2 data-i18n="pRqTitle">Red Quiz (Android): Reto multiplayer mode</h2>
+<div class="card prose">
+<p data-i18n="pRq1">The general statements above apply to Red Quiz in solo mode. The only exception is the optional Reto (challenge) mode, which lets two players compete on the same quiz in real time and therefore needs an internet connection.</p>
+<p data-i18n="pRq2">To make this work, the following data is temporarily stored on Firebase Realtime Database (Google):</p>
+<ul>
+<li data-i18n="pRqL1">The display name you enter before the match</li>
+<li data-i18n="pRqL2">Your quiz answers (which questions you got right or wrong)</li>
+<li data-i18n="pRqL3">Your score and time</li>
+</ul>
+<p data-i18n="pRq3">This data is tied to a randomly generated 6-character challenge code and is not linked to any account, device identifier or personal profile.</p>
+<p data-i18n="pRq4">All challenge data is automatically deleted from the database when the player who created the challenge disconnects. No data is retained after the match ends.</p>
+<p data-i18n="pRq5">Reto is entirely optional. Players who do not use it are not affected by any of the above.</p>
+</div>
+<h2 data-i18n="pContactTitle">Contact</h2>
+<div class="card"><p class="mail">Sergio Couto</p><p><a href="mailto:serxiocouto@gmail.com">serxiocouto@gmail.com</a> · <a href="https://www.linkedin.com/in/sergiocoutocatoira" target="_blank" rel="noopener noreferrer">LinkedIn</a></p></div>
+</main>
+<footer data-i18n="footer">© Sergio Couto</footer>
 </body></html>
